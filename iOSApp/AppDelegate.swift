@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  iOSFirstApp
+//  iOSApp
 //
-//  Created by Suresh Chaudhari on 2/19/20.
-//  Copyright © 2020 Codebrust. All rights reserved.
+//  Created by softwarica on 2/19/20.
+//  Copyright © 2020 softwarica. All rights reserved.
 //
 
 import UIKit

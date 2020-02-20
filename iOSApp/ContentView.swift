@@ -47,15 +47,15 @@ struct ContentView: View {
                 
                 HStack{
                     Spacer()
-                    Image(symbols[number[0]]).resizable()
+                    Image(symbols[numbers[0]]).resizable()
                         .aspectRatio(1,contentMode: .fit)
                         .background(Color.white.opacity(0.5))
                         .cornerRadius(20)
-                    Image(symbols[number[0]]).resizable()
+                    Image(symbols[numbers[1]]).resizable()
                     .aspectRatio(1,contentMode: .fit)
                     .background(Color.white.opacity(0.5))
                     .cornerRadius(20)
-                    Image(symbols[number[0]]).resizable()
+                    Image(symbols[numbers[2]]).resizable()
                     .aspectRatio(1,contentMode: .fit)
                     .background(Color.white.opacity(0.5))
                     .cornerRadius(20)
@@ -67,13 +67,13 @@ struct ContentView: View {
 
                     self.numbers[1] = Int.random(in:
                     0...self.symbols.count - 1)
-
-                    self.number[1] = Int.random(in:
+                    
+                    self.numbers[2] = Int.random(in:
                     0...self.symbols.count - 1)
 
                     if self.numbers[0] == self.numbers[1] &&
                         self.numbers[1] == self.numbers[2] {
-                            self.credits += betAmount * 10
+                        self.credits += self.betAmount * 10
                         }
                     else{
                         self.credits -= self.betAmount
